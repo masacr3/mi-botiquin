@@ -12,6 +12,9 @@ import { GridCardComponent } from './componentes/grid-card/grid-card.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    GridCardComponent
   ]
 })
 export class MedicacionModule { }

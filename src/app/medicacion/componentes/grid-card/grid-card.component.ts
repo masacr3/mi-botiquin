@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RemediosI } from '../../models/remedios';
+import { RemediosService } from '../../services/remedios.service';
 
 @Component({
   selector: 'app-grid-card',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridCardComponent implements OnInit {
 
-  constructor() { }
+  lista! : RemediosI[]
+
+  constructor( private remediosService : RemediosService) { }
 
   ngOnInit(): void {
+    this.remediosService.getMedicamentos().subscribe( data => this.lista = data)
   }
 
 }

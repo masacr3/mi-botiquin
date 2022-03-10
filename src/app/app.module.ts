@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MedicacionModule } from './medicacion/medicacion.module';
+import { HttpClientModule } from '@angular/common/http';
+import { RemediosService } from './medicacion/services/remedios.service';
 
 @NgModule({
   declarations: [
@@ -10,9 +13,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MedicacionModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [RemediosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
