@@ -7,7 +7,7 @@ import { RemediosI } from '../models/remedios'
   providedIn: 'root'
 })
 export class RemediosService {
-  url = "http://192.168.0.13:3001/api/medicamentos" //end-point
+  url = "http://192.168.0.8:3001/api/medicamentos" //end-point
 
   constructor(private http : HttpClient) { }
 
