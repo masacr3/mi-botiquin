@@ -76,3 +76,10 @@ p{
   margin-left: 12px;
   margin-right: 10px;
 }
+
+/*  full card experimental */
+.full-card{
+  position: relative;
+  height: 85vh;
+  margin-bottom: 15vh;
+}

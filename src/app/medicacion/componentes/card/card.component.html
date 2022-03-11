@@ -1,9 +1,9 @@
-<div class="box">
+<div class="box" #principal>
   <div class="header">
     <span>{{ medicamento.nombre }}</span>
-    <span class="label">{{info}}</span>
+    <span class="label" (click)="action()">{{info}}</span>
     <p class="description">{{ medicamento.descripcion}}</p>
-    <p *ngIf="focus">{{medicamento.fecha}}</p>
+    <span *ngIf="focus" class="description mid 12-2">{{medicamento.fecha}}</span>
     <p><span [ngClass]="status(medicamento.cantidad)"></span><span>{{ medicamento.cantidad }}</span></p>
   </div>
 </div>
