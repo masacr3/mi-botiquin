@@ -1,0 +1,17 @@
+<div class="box">
+      <div class="consulta">
+        <div class="nombre">
+          <p class="descripcion">{{producto.nombre}}</p>
+        </div>
+        <div class="precio"  (click)="show = !show">
+          <p>${{producto.precio}}</p>
+        </div>
+      </div>
+      <div class="actualizar" *ngIf="show">
+        <form [formGroup]="form" (ngSubmit)="enviarData()">  
+          <input type="text" formControlName="precio" placeholder="actualizar precio...">
+          <button>Enviar</button>
+        </form>
+        <button (click)="eliminar()">ELIMINAR PRODUCTO</button>
+      </div>
+  </div>

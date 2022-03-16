@@ -1,0 +1,16 @@
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="enviarData()" class="crear">
+    <input type="text" placeholder="nombre.." formControlName="nombre">
+    <input type="text" placeholder="precio.." formControlName="precio">
+    <button>Enviar</button>
+  </form>
+
+
+    <div class="group">      
+        <input type="search" required name="filtrarArticulos" [(ngModel)]="filtrarArticulos">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Filtrar</label>
+      </div>
+    <app-card-articulos  *ngFor="let item of getlista() | filtrarProductos : filtrarArticulos" [producto]="item" (producto_eliminado)="sacarProducto($event)"></app-card-articulos>
+</div>
