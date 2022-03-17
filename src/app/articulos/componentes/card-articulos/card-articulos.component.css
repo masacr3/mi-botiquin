@@ -55,27 +55,49 @@ p{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height:70px;
   padding-top: 10px;
   border : 1px solid #58A6FF;
   border-top: none;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  padding: 8px;
+}
+
+button{
+  background-color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+  color: #58A6FF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #58A6FF;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 input 				{
   background-color: #0d1117;
   color: #58A6FF;
-  font-size:12px;
-  padding:10px 10px 10px 5px;
+  font-size:16px;
+  padding:10px 10px 10px 10px;
   display:block;
   width:120px;
   border:none;
   border-bottom:1px solid #58A6FF;
+  text-align: center;
 }
 
 input:focus 		{ outline:none; }
 
+input:focus::placeholder{
+  color: transparent;
+}
 
 
-  
+
