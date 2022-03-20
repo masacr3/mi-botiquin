@@ -73,6 +73,16 @@ button{
   border-color: #58A6FF;
 }
 
+.btn-eliminar{
+  background-color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+  color: #ec5316;;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ec5316;;
+}
+
 .row{
   display: flex;
   flex-direction: row;

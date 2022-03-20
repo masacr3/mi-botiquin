@@ -1,9 +1,12 @@
 <div class="container">
-  <form [formGroup]="form" (ngSubmit)="enviarData()" class="crear">
-    <input type="text" placeholder="nombre.." formControlName="nombre">
-    <input type="text" placeholder="precio.." formControlName="precio">
-    <button>Enviar</button>
-  </form>
+  <div class="contenedor-formulario">
+    <p (click)="actionFormulario()" class="desplegarFormulario">{{activeFormularioMsj}}</p>
+    <form *ngIf="activeFormulario" [formGroup]="form" (ngSubmit)="enviarData()" class="crear">
+      <input type="text" placeholder="nombre.." formControlName="nombre">
+      <input type="number" placeholder="precio.." formControlName="precio">
+      <button>Enviar</button>
+    </form>
+  </div>
 
 
     <div class="group">      

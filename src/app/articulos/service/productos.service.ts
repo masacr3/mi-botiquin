@@ -8,10 +8,10 @@ import { ProductoI } from '../models/productos';
 })
 export class ProductosService {
 
-  consulta = "http://192.168.0.8:3001/api/productos" //end-point
-  crear = "http://192.168.0.8:3001/api/crearProducto" //end-point
-  actualizar = "http://192.168.0.8:3001/api/actualizarProducto" //end-point
-  eliminar = "http://192.168.0.8:3001/api/eliminar/" //end-point
+  consulta = "http://192.168.0.18:3001/api/productos" //end-point
+  crear = "http://192.168.0.18:3001/api/crearProducto" //end-point
+  actualizar = "http://192.168.0.18:3001/api/actualizarProducto" //end-point
+  eliminar = "http://192.168.0.18:3001/api/eliminar/" //end-point
 
   constructor(private http : HttpClient) { }
 

@@ -9,6 +9,18 @@
   margin-bottom: 50px;
 }
 
+p{
+  user-select: none;
+}
+
+
+.desplegarFormulario{
+  color: #ec5316;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
   /* form starting stylings ------------------------------- */
 .group 			  { 
   position:relative; 
